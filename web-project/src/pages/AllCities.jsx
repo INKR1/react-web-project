@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function AllMeetups() {
+export default function AllCities() {
   return (
     <div>
-      All meet ups page
+      All cities page
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function NewMeetup() {
+export default function NewCity() {
   return (
     <div>
-      New meet up page
+      New city to meetpage
     </div>
   )
 }
