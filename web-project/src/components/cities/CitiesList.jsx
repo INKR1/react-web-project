@@ -7,7 +7,7 @@ export default function CitiesList(props) {
         <CitiesWrapper 
         key={city.id} 
         id={city.id} 
-        imgFile={city.imgFile}
+        img={city.img}
         name={city.name}
         address={city.address}
         description={city.description}
