@@ -1,13 +1,10 @@
 import { citiesData } from '../data';
+import CitiesList from '../components/cities/CitiesList';
 export default function AllCities() {
   return (
     <section>
       <h1>All Cities</h1>
-      {citiesData.map((city) => {
-        return(
-          <li key={city.id}> {city.name}</li>
-        )
-      })}
+      <CitiesList cities={citiesData} />
     </section>
   )
 }
