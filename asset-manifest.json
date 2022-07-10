@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-web-project/static/css/main.2cad5016.css",
+    "main.js": "/react-web-project/static/js/main.da9292d3.js",
+    "index.html": "/react-web-project/index.html",
+    "main.2cad5016.css.map": "/react-web-project/static/css/main.2cad5016.css.map",
+    "main.da9292d3.js.map": "/react-web-project/static/js/main.da9292d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cad5016.css",
+    "static/js/main.da9292d3.js"
+  ]
+}
