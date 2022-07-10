@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import Card from "../ui/Card";
 import classes from "./newCityForm.module.css";
 
-export default function NewCityForm() {
+export default function NewCityForm(props) {
     const imgInputRef = useRef();
     const addressInputRef = useRef();
     const nameInputRef = useRef();  
@@ -20,8 +20,8 @@ export default function NewCityForm() {
             img: enteredImg,
             address: enteredAddress,
             desc: enteredDesc
-        }
-        console.log(cityData);
+        };
+        props.onAddCity(cityData);
     }
   return (
     <Card>
