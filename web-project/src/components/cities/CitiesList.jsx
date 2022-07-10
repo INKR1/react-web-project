@@ -6,9 +6,9 @@ export default function CitiesList(props) {
         {props.cities.map(city => (
         <CitiesWrapper 
         key={city.id} 
-        id={city.id} 
+        id={city.id}
+        name={city.name} 
         img={city.img}
-        name={city.name}
         address={city.address}
         description={city.description}
         />
