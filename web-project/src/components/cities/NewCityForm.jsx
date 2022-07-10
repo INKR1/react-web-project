@@ -6,20 +6,20 @@ export default function NewCityForm(props) {
     const imgInputRef = useRef();
     const addressInputRef = useRef();
     const nameInputRef = useRef();  
-    const descInputRef = useRef();
+    const descriptionInputRef = useRef();
 
     function handleSubmit(event) {
         event.preventDefault();
         const enteredName = nameInputRef.current.value;
         const enteredImg = imgInputRef.current.value;
         const enteredAddress = addressInputRef.current.value;
-        const enteredDesc = descInputRef.current.value;
+        const enteredDescription = descriptionInputRef.current.value;
 
         const cityData = {
             name: enteredName,
             img: enteredImg,
             address: enteredAddress,
-            desc: enteredDesc
+            description: enteredDescription
         };
         props.onAddCity(cityData);
     }
@@ -40,7 +40,7 @@ export default function NewCityForm(props) {
             </div>
             <div className={classes.control}>
                 <label htmlFor="description">Description</label>
-                <textarea type="description" required row='5' ref={descInputRef}></textarea>
+                <textarea id="description" required row='5' ref={descriptionInputRef}></textarea>
             </div>
             <div className={classes.actions }>
                 <button>Add City</button>
