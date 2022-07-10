@@ -1,8 +1,8 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import NewCityForm from '../components/cities/NewCityForm'
 
 export default function NewCity() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function addCityHandler(cityData){ 
     fetch('https://react-cities-web-default-rtdb.firebaseio.com/cities.json',
@@ -14,7 +14,7 @@ export default function NewCity() {
       }
     })
     .then(() => {
-      history.replace('/');
+      navigate("/", { replace: true });
     });
   }
   return (

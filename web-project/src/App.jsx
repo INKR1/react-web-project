@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import AllCities from './pages/AllCities';
 import NewCity from './pages/NewCity';
 import Favorites from './pages/Favorites';
@@ -9,17 +9,11 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Switch>
-          <Route exact path="/">
-            <AllCities />
-          </Route>
-          <Route path="/new-city">
-            <NewCity />
-          </Route>
-          <Route path="/favorites">
-            <Favorites />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<AllCities />} />
+          <Route path="/new-city" element={<NewCity />} />
+          <Route path="/favorites" element={<Favorites />} />
+        </Routes>
       </Layout>
     </div>
   );

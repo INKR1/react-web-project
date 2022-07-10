@@ -42,10 +42,10 @@
     color: lightsteelblue;
   }
   
-  /* .badge {
-    background-color: #cc2062;
+  .badge {
+    background-color: lightsteelblue;
     color: white;
     border-radius: 12px;
     padding: 0 1rem;
     margin-left: 0.5rem;
-  } */
+  }
