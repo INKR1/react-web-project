@@ -14,7 +14,7 @@ In this project you can see:
  > - Dynamic data with `useContext` hook,
 
 ## Live view
-Click [_here_](https://inkr1.github.io/) for live view
+Click [_here_]((https://inkr1.github.io/react-web-project/#) for live view
 
 ## Images
 <img width="1470" alt="cities-web-mainPage" src="https://user-images.githubusercontent.com/92999496/178338442-807832a4-840c-41a2-b2de-8f4863bab7de.png">
